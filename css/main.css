@@ -64,17 +64,30 @@ html {
 /* intro section */
 .font-custom{
   font-size: 55px;
-
+}
+.custom-fontHead{
+  font-size: 70px;
+ 
 }
 @media screen and (max-width: 767px){
   .font-custom{
-    font-size: 40px;
+    font-size: 50px;
+  }
+  #about p{
+    line-height: 1.5;
   }
 }
 /* ends */
+ 
+/* about */
+@media screen and (min-width: 767px){
+  #about p{
+    line-height: 2;
+  }
+}
+/* about ends */
 
 /* section title */
-/*** Section Title ***/
 .section-title h1 {
   position: relative;
   display: inline-block;
@@ -145,6 +158,13 @@ html {
   border-radius: 25px;
   border: 3px solid white;
   box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+}
+#message .italicPara{
+ font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px;
+  color:rgba(28, 28, 28, 0.75)
 }
 /* message ends */
 /* projects starts */
