@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth; }
+.custom-button{
+  background-color: rgba(28, 28, 28, 0.75);
+}
+.custom-button:hover{
+  background-color: rgba(28, 28, 28, 0.4);
+}
+
+#intro {
+  background: url("../img/image4.jpg") no-repeat center center;
+  background-size: cover; }
+
+.top-nav-collapse {
+  background-color: rgba(28, 28, 28, 0.8)!important; }
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important; }
+
+/* @media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(240, 239, 239, 0.9) !important; } } */
+
+#intro .h6 {
+  font-weight: 300;
+  line-height: 1.7; }
+
+.site-bg-img {
+  height: 100vh;
+  min-height: 480px;
+  max-height: 1080px; }
+
+.hm-gradient .site-bg-img {
+  background: rgba(42, 27, 161, 0.7);
+  background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%); }
+
+@media (max-width: 450px) {
+  .margins {
+    margin-right: 1rem;
+    margin-left: 1rem; }
+   }
+
+
+
+/* Navbar items */
+.nav-link{
+  position: relative;
+}
+.nav-link::after{
+  content:'';
+  transition: all 0.5s;
+  opacity: 0;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 9px;
+}
+.nav-link:hover::after{
+  opacity: 1;
+  width: 70%;
+}
+/* intro section */
+.font-custom{
+  font-size: 55px;
+
+}
+@media screen and (max-width: 767px){
+  .font-custom{
+    font-size: 40px;
+  }
+}
+/* ends */
+
+/* section title */
+/*** Section Title ***/
+.section-title h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+}
+
+.section-title.text-start h1 {
+  padding-left: 0;
+}
+
+.section-title h1::before,
+.section-title h1::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 5px;
+  bottom: 0;
+  background: rgba(28, 28, 28, 0.75);
+}
+
+.section-title h1::before {
+  left: 0;
+}
+
+.section-title h1::after {
+  right: 0;
+}
+
+.section-title.text-start h1::before {
+  display: none;
+}
+/* section title ends */
+/* section-title1 starts */
+.section-title1 h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+}
+
+.section-title1.text-start h1 {
+  padding-left: 0;
+}
+
+.section-title1 h1::before,
+.section-title1 h1::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 5px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.section-title1 h1::before {
+  left: 0;
+}
+
+.section-title1 h1::after {
+  right: 0;
+}
+
+.section-title1.text-start h1::before {
+  display: none;
+}
+/* sectionn-title1 ends */
+/* message section */
+#message img{
+  border-radius: 25px;
+  border: 3px solid white;
+  box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+}
+/* message ends */
+/* projects starts */
+
+.card{
+  transition: all 0.5s;
+}
+.card:hover{
+  box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+  transform: scale(1.02);
+}
+
+/* project ends */
