@@ -8,18 +8,20 @@ html {
 }
 
 #intro {
-  background: url("../img/image4.jpg") no-repeat center center;
+  background: url("../img/image3.jpg") no-repeat center center;
   background-size: cover; }
 
 .top-nav-collapse {
-  background-color: rgba(28, 28, 28, 0.8)!important; }
+  background-color: rgba(28, 28, 28, 0.7)!important; }
 
 .navbar:not(.top-nav-collapse) {
   background: transparent !important; }
 
+
 @media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: rgba(28, 28, 28, 0.8) !important; } }
+  .navbar .navbar-collapse ul{
+    background-color: rgba(28, 28, 28, 0.75);
+  } }
 
 #intro .h6 {
   font-weight: 300;
@@ -40,7 +42,9 @@ html {
     margin-left: 1rem; }
    }
 
-
+.navbar{
+  box-shadow: none;
+}
 
 /* Navbar items */
 .nav-link{
@@ -178,3 +182,10 @@ html {
 }
 
 /* project ends */
+/* partners starts */
+
+.brand:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+/* partners ends */

@@ -1,8 +1,39 @@
 html {
     scroll-behavior: smooth; }
-.custom_bg{
+/* .custom_bg{
+    background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%);
+} */
+#intro {
+  background: url("../img/image3.jpg") no-repeat center center;
+  background-size: cover; }
+
+.top-nav-collapse {
+  background-color: rgba(28, 28, 28, 0.7)!important; }
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important; }
+
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse ul{
+    background-color: rgba(28, 28, 28, 0.75);
+  } }
+.site-bg-img {
+    height: 40vh;
     
-    background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%);;
+    max-height: 300px; }
+  
+.hm-gradient .site-bg-img {
+    background: rgba(42, 27, 161, 0.7);
+    background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%); }
+  
+@media (max-width: 450px) {
+    .margins {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+     }
+.navbar{
+  box-shadow: none;
 }
 .nav-link{
   position: relative;
