@@ -17,9 +17,9 @@ html {
 .navbar:not(.top-nav-collapse) {
   background: transparent !important; }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: rgba(240, 239, 239, 0.9) !important; } } */
+    background: rgba(28, 28, 28, 0.8) !important; } }
 
 #intro .h6 {
   font-weight: 300;
