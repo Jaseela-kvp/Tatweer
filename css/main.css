@@ -70,11 +70,7 @@ html {
   font-size: 55px;
   font-weight: 300;
 }
-.custom-fontHead{
-  font-size: 70px;
-  font-weight: 300;
- 
-}
+
 .word-font{
   font-size: 70px;
   font-weight: 500;
@@ -195,18 +191,19 @@ html {
 
 /* project ends */
 /* partners starts */
-
+.brand{
+  transition: all 0.2s ease-in-out;
+}
 .brand:hover{
   transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
 }
-@media (max-width:478px){
+@media (max-width:468px){
   .custom-heading{
     font-size: 18px;
     font-weight: 500;
   }
 }
-@media (min-width:479px){
+@media (min-width:469px){
   .custom-heading{
     font-size: 2.5rem;
     font-weight: 500;
