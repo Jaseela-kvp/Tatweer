@@ -197,5 +197,33 @@ html {
 .brand:hover{
   transform: scale(1.2);
 }
+@media (max-width:768px){
+  .brand{
+    margin-left: 100px;
+    margin-bottom: 25px;
+  }
+}
 
 /* partners ends */
+/* contact */
+#contact{
+  background: url("../img/contact.png") no-repeat center center;
+  background-size: cover;
+}
+iframe{
+  border-radius: 5px; 
+} 
+.map{
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+.map iframe{
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 80%;
+  height: 80%;
+}
+
+/* contact ends */
