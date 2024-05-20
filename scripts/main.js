@@ -13,3 +13,20 @@ function closeNavbar() {
       navbarToggler.setAttribute('aria-expanded', 'false');
     }
   }
+  // project
+  
+  function filterProjects(status) {
+    let allProjects = document.querySelectorAll('.card');
+    allProjects.forEach(project => {
+      if (status === 'all') {
+        project.style.display = 'block';
+      } else {
+        project.style.display = project.classList.contains(status) ? 'block' : 'none';
+      }
+    });
+  }
+
+  // Initially show all projects
+  filterProjects('all');
+
+
