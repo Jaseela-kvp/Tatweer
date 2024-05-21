@@ -215,3 +215,11 @@ iframe{
 }
 
 /* contact ends */
+
+/* back to top */
+.arrow-icon {
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+  bottom: 45px;
+}
