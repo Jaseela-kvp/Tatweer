@@ -1,10 +1,8 @@
 html {
     scroll-behavior: smooth; }
-/* .custom_bg{
-    background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%);
-} */
+
 #intro {
-  background: url("../img/image3.jpg") no-repeat center center;
+  background: url("../img/tatweerImages/intro.jpg") no-repeat center center;
   background-size: cover; }
 
 .top-nav-collapse {
@@ -136,7 +134,7 @@ html {
 
 /* gallery ends */
 #contact{
-  background: url("../img/contact.png") no-repeat center center;
+  background: url("../img/tatweerImages/contact.png") no-repeat center center;
   background-size: cover;
 }
 iframe{

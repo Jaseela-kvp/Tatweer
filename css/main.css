@@ -8,7 +8,7 @@ html {
 }
 
 #intro {
-  background: url("../img/image3.jpg") no-repeat center center;
+  background: url("../img/tatweerImages/intro.jpg") no-repeat center center;
   background-size: cover; }
 
 .top-nav-collapse {
@@ -195,7 +195,7 @@ html {
 /* partners ends */
 /* contact */
 #contact{
-  background: url("../img/contact.png") no-repeat center center;
+  background: url("../img/tatweerImages/contact.png") no-repeat center center;
   background-size: cover;
 }
 iframe{
