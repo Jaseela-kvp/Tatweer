@@ -191,6 +191,9 @@ html {
     margin-left: 50px;
   }
 }
+.custom-brand-a:hover{
+   border-bottom: 2px solid #d3a500;
+}
 
 /* partners ends */
 /* contact */

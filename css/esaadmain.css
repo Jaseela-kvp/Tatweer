@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth; }
+  /* .custom-button{
+    background-color: rgba(28, 28, 28, 0.75);
+  }
+  .custom-button:hover{
+    background-color: rgba(28, 28, 28, 0.4);
+  } */
+
+  
+  #intro {
+    background: url("../img/EsaadImages/intro1.jpg") no-repeat center center;
+    background-size: cover; }
+  
+  .top-nav-collapse {
+    background-color: #faedcd;}
+  
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important; }
+  
+  
+  @media (max-width: 768px) {
+    .navbar .navbar-collapse ul{
+      background-color: transparent;
+    } }
+  
+  #intro .h6 {
+    font-weight: 300;
+    line-height: 1.7; }
+  
+  .site-bg-img {
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1080px; }
+  
+  .hm-gradient .site-bg-img {
+    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); }
+  
+  @media (max-width: 450px) {
+    .margins {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+     }
+  
+  .navbar{
+    box-shadow: none;
+  }
+  
+  /* Navbar items */
+  .nav-link{
+    position: relative;
+  }
+  .nav-link::after{
+    content:'';
+    transition: all 0.5s;
+    opacity: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #603808;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+    width: 70%;
+  }
+  .navbar ul li a{
+   font-weight: 400;
+   color:#603808;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  /* intro section */
+  .font-custom{
+    font-size: 90px;
+    font-weight: 500;
+    color: #603808;
+  }
+  
+  .word-font{
+    font-size: 70px;
+    font-weight: 500;
+  }
+  .logo{
+    width : 250px;
+  }
+  @media screen and (max-width: 767px){
+    .font-custom{
+      font-size: 55px;
+      line-height: 60px;
+      font-weight: 500;
+    }
+    .word-font{
+      font-size: 60px;
+      font-weight: 500;
+    }
+    #about p{
+      line-height: 1.5;
+    }
+    .logo{
+      width:200px;
+    }
+  }
+  /* ends */
+   
+  /* about */
+  @media screen and (min-width: 767px){
+    #about p{
+      line-height: 2;
+    }
+  }
+  /* about ends */
+  
+  /* section title */
+  .section-title {
+    padding-bottom: 40px;
+    text-align: start;
+    margin-left: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    color: #9b9a9a;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #603808;
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+   
+    font-family: "Poppins", sans-serif;
+    color: #603808;
+  }
+  /* section title ends */
+
+  /* accordian starts */
+
+  .accordion{
+    --bs-accordion-btn-bg: rgba(249, 214, 167, 0.7);
+    --bs-accordion-active-bg: rgba(249, 214, 167, 0.7);
+    --bs-accordion-active-color: black;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: #rgba(249, 214, 167, 0.7);
+    --bs-accordion-color: #603808;
+    --bs-accordion-border-color: #603808;
+    --bs-accordion-border-width: 2px;
+    
+  }
+  .accordion-button:not(.collapsed){
+    box-shadow: none;
+  }
+  .accordion-button h4{
+    color: #603808;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .accordion-body{
+    background-color: #603808;
+    color: white;
+  }
+  .accordion-button{
+      display: flex ;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+  }
+ 
+  /* accordian ends */
+
+  /* section-title1 starts */
+  
+  
+  /* .section-title1 h1::before,
+  .section-title1 h1::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 5px;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.75);
+  } */
+  
+  
+  /* sectionn-title1 ends */
+  /* message section */
+  #message img{
+    border-radius: 25px;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+  }
+  #message .italicPara{
+   font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    color:rgba(28, 28, 28, 0.75)
+  }
+  /* message ends */
+  /* projects starts */
+  
+  .card{
+    transition: all 0.5s;
+  }
+  .card:hover{
+    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+    transform: scale(1.02);
+  }
+  
+  /* project ends */
+  /* partners starts */
+  .brand{
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 25px;
+  }
+  .brand:hover{
+    transform: scale(1.2);
+  }
+  @media (max-width:767px){
+    .brand{
+      margin-left: 100px;
+      
+    }
+  }
+  @media (max-width: 550px){
+    .brand{
+      margin-left: 50px;
+    }
+  }
+  
+  /* partners ends */
+  /* contact */
+  #contact{
+    background: url("../img/tatweerImages/contact.png") no-repeat center center;
+    background-size: cover;
+  }
+  iframe{
+    border-radius: 5px; 
+  } 
+  .map{
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+  }
+  .map iframe{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 80%;
+    height: 80%;
+  }
+  
+  /* contact ends */
+  
+  /* back to top */
+  .arrow-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    bottom: 45px;
+  }
