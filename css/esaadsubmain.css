@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+}
+.top-nav-collapse {
+  background-color: #faedcd;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: #faedcd;
+}
+@media (max-width: 450px) {
+    .margins {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+     }
+/* Navbar items */
+.nav-link{
+    position: relative;
+  }
+  .nav-link::after{
+    content:'';
+    transition: all 0.5s;
+    opacity: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #603808;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+    width: 70%;
+  }
+  .navbar ul li a{
+   font-weight: 400;
+   color:#603808;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  .logo{
+    width : 250px;
+  }
+  @media screen and (max-width: 767px){
+    .logo{
+        width:200px;
+      }
+  }
+  .navbar{
+    box-shadow: none;
+  }
+  .custom_margin{
+    margin-top: 100px;
+  }
+   /* section title */
+   .section-title {
+    padding-bottom: 40px;
+    text-align: start;
+    margin-left: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    color: #9b9a9a;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #603808;
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+   
+    font-family: "Poppins", sans-serif;
+    color: #603808;
+  }
+  /* section title ends */
+/* gallery starts */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .gallery a {
+    flex: 0 0 calc(33.33% - 10px); /* 3 images per row with some spacing between */
+    margin: 5px;
+    max-width: calc(33.33% - 10px); /* Adjust based on the number of images per row */
+    height: auto; /* Ensure images maintain aspect ratio */
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery a {
+      flex: 0 0 calc(100% - 10px); /* 1 image per row for screens smaller than 768px */
+      max-width: calc(100% - 10px);
+    }
+  }
+  
+  /* gallery ends */
+    
+  /* back to top */
+  .arrow-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    bottom: 45px;
+  }
+  /* back to top ends */

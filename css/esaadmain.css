@@ -106,6 +106,7 @@ html {
   /* ends */
    
   /* about */
+ 
   @media screen and (min-width: 767px){
     #about p{
       line-height: 2;
@@ -155,8 +156,8 @@ html {
   /* accordian starts */
 
   .accordion{
-    --bs-accordion-btn-bg: rgba(249, 214, 167, 0.7);
-    --bs-accordion-active-bg: rgba(249, 214, 167, 0.7);
+    /* --bs-accordion-btn-bg: rgba(249, 214, 167, 0.7);
+    --bs-accordion-active-bg: rgba(249, 214, 167, 0.7); */
     --bs-accordion-active-color: black;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #rgba(249, 214, 167, 0.7);
@@ -165,6 +166,12 @@ html {
     --bs-accordion-border-width: 2px;
     
   }
+  .accordion-button{
+    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
+  }
+  /* .accordion-button:active{
+    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
+  } */
   .accordion-button:not(.collapsed){
     box-shadow: none;
   }
@@ -198,15 +205,15 @@ html {
     background-size: cover;
   }
   #Pintro_1 {
-    background: url("../img/EsaadImages/personalIntro.png") no-repeat center center;
+    background: url("../img/EsaadImages/medalintro2.png") no-repeat center center;
     background-size: cover;
   }
   #Pintro_2 {
-    background: url("../img/EsaadImages/tentIntro.png") no-repeat center center;
+    background: url("../img/EsaadImages/personalIntro.png") no-repeat center center;
     background-size: cover;
   }
   #Pintro_3 {
-    background: url("../img/EsaadImages/flagintro.png") no-repeat center center;
+    background: url("../img/EsaadImages/uniformIntro.png") no-repeat center center;
     background-size: cover;
   }
   #Pintro_4 {
@@ -214,7 +221,7 @@ html {
     background-size: cover;
   }
   #Pintro_5 {
-    background: url("../img/EsaadImages/medalintro2.png") no-repeat center center;
+    background: url("../img/EsaadImages/tentIntro.png") no-repeat center center;
     background-size: cover;
   }
   #Pintro_6 {
