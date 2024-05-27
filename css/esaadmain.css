@@ -185,6 +185,58 @@ html {
  
   /* accordian ends */
 
+  /* product section starts */
+  .col-margin {
+    margin-right: 3rem;  
+  }
+          /* Remove margin from the last column */
+  .row [class*="col-"]:last-child {
+    margin-right: 0;
+  }
+  #products{
+    background: url("../img/EsaadImages/blur.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_1 {
+    background: url("../img/EsaadImages/personalIntro.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_2 {
+    background: url("../img/EsaadImages/tentIntro.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_3 {
+    background: url("../img/EsaadImages/flagintro.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_4 {
+    background: url("../img/EsaadImages/lightingintro.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_5 {
+    background: url("../img/EsaadImages/medalintro2.png") no-repeat center center;
+    background-size: cover;
+  }
+  #Pintro_6 {
+    background: url("../img/EsaadImages/generalintro.png") no-repeat center center;
+    background-size: cover;
+  }
+  .custom_shadow{
+    display: flex;
+    align-items: start;
+  }
+  #products .h5{
+    color:#603808
+  }
+  #products a{
+    background-color: #603808 !important;
+    transition: all 0.2s ease-in-out;
+  }
+  #products a:hover{
+    transform: scale(1.05);
+  }
+  /* product section ends */
+
   /* section-title1 starts */
   
   
@@ -201,7 +253,7 @@ html {
   
   /* sectionn-title1 ends */
   /* message section */
-  #message img{
+  /* #message img{
     border-radius: 25px;
     border: 3px solid white;
     box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
@@ -212,21 +264,21 @@ html {
     font-weight: 500;
     line-height: 25px;
     color:rgba(28, 28, 28, 0.75)
-  }
+  } */
   /* message ends */
   /* projects starts */
   
-  .card{
+  /* .card{
     transition: all 0.5s;
   }
   .card:hover{
     box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
     transform: scale(1.02);
-  }
+  } */
   
   /* project ends */
   /* partners starts */
-  .brand{
+  /* .brand{
     transition: all 0.2s ease-in-out;
     margin-bottom: 25px;
   }
@@ -243,11 +295,11 @@ html {
     .brand{
       margin-left: 50px;
     }
-  }
+  } */
   
   /* partners ends */
   /* contact */
-  #contact{
+  /* #contact{
     background: url("../img/tatweerImages/contact.png") no-repeat center center;
     background-size: cover;
   }
@@ -265,7 +317,7 @@ html {
     left: 35px;
     width: 80%;
     height: 80%;
-  }
+  } */
   
   /* contact ends */
   
