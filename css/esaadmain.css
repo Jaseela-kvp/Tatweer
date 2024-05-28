@@ -6,7 +6,10 @@ html {
   .custom-button:hover{
     background-color: rgba(28, 28, 28, 0.4);
   } */
-
+.custom-text-color{
+  color:#603808;
+  font-weight: 500;
+}
   
   #intro {
     background: url("../img/EsaadImages/intro1.jpg") no-repeat center center;
@@ -205,7 +208,7 @@ html {
     background-size: cover;
   }
   #Pintro_1 {
-    background: url("../img/EsaadImages/medalintro2.png") no-repeat center center;
+    background: url("../img/EsaadImages/gifts/medalintro2.png") no-repeat center center;
     background-size: cover;
   }
   #Pintro_2 {
@@ -306,8 +309,8 @@ html {
   
   /* partners ends */
   /* contact */
-  /* #contact{
-    background: url("../img/tatweerImages/contact.png") no-repeat center center;
+  #contact{
+    background: url("../img/EsaadImages/contactbg.jpeg") no-repeat center center;
     background-size: cover;
   }
   iframe{
@@ -317,6 +320,7 @@ html {
     position: relative;
     width: 100%;
     padding-top: 50%;
+    filter: invert(100%);
   }
   .map iframe{
     position: absolute;
@@ -324,7 +328,10 @@ html {
     left: 35px;
     width: 80%;
     height: 80%;
-  } */
+  }
+  #contact a{
+    background-color: transparent !important;
+  }
   
   /* contact ends */
   
