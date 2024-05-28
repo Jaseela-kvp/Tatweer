@@ -109,11 +109,14 @@ html {
   }
   
    }
-   .fixed-size {
-    width: 250px; 
-    height: 300px; 
-    object-fit: contain; 
+  @media (min-width:746px){
+    .fixed-size {
+      width: 250px; 
+      height: 300px; 
+      object-fit: contain; 
+    }
   }
+  
    
   /* gallery ends */
     
