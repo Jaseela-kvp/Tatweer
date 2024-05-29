@@ -123,7 +123,9 @@ html {
       object-fit: contain; 
     }
   }
-  
+  .custom-shadow{
+    box-shadow:  7px 7px 5px 0px rgba(0, 0, 0, 0.75);;
+  }
    
   /* gallery ends */
   /* contact */
@@ -154,6 +156,32 @@ html {
     color:#603808;
     font-weight: 500;
   }
+  #contact {
+    padding: 80px 0;
+    background: url("../img/EsaadImages/contactbg.jpeg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    #contact {
+      background-attachment: fixed;
+    }
+  }
+  
+
+  
+
   /* contact ends */
     
   /* back to top */

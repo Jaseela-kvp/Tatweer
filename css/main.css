@@ -193,10 +193,7 @@ html {
 
 /* partners ends */
 /* contact */
-#contact{
-  background: url("../img/tatweerImages/contact.png") no-repeat center center;
-  background-size: cover;
-}
+
 iframe{
   border-radius: 5px; 
 } 
@@ -211,6 +208,27 @@ iframe{
   left: 35px;
   width: 80%;
   height: 80%;
+}
+#contact {
+  background: url("../img/tatweerImages/contact.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  #contact {
+    background-attachment: fixed;
+  }
 }
 
 /* contact ends */
