@@ -1,13 +1,5 @@
 html {
     scroll-behavior: smooth; }
-  /* .custom-button{
-    background-color: rgba(28, 28, 28, 0.75);
-  }
-  .custom-button:hover{
-    background-color: rgba(28, 28, 28, 0.4);
-  } */
-
-  
   #intro {
     background: url("../img/EsaadImages/intro1.jpg") no-repeat center center;
     background-size: cover; }
@@ -156,8 +148,6 @@ html {
   /* accordian starts */
 
   .accordion{
-    /* --bs-accordion-btn-bg: rgba(249, 214, 167, 0.7);
-    --bs-accordion-active-bg: rgba(249, 214, 167, 0.7); */
     --bs-accordion-active-color: black;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #rgba(249, 214, 167, 0.7);
@@ -169,9 +159,7 @@ html {
   .accordion-button{
     background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
   }
-  /* .accordion-button:active{
-    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
-  } */
+
   .accordion-button:not(.collapsed){
     box-shadow: none;
   }
@@ -244,67 +232,18 @@ html {
   }
   /* product section ends */
 
-  /* section-title1 starts */
-  
-  
-  /* .section-title1 h1::before,
-  .section-title1 h1::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 5px;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.75);
-  } */
-  
-  
-  /* sectionn-title1 ends */
-  /* message section */
-  /* #message img{
-    border-radius: 25px;
-    border: 3px solid white;
-    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+  /* career starts */
+  #career{
+    background-color: beige;
   }
-  #message .italicPara{
-   font-size: 25px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 25px;
-    color:rgba(28, 28, 28, 0.75)
-  } */
-  /* message ends */
-  /* projects starts */
-  
-  /* .card{
-    transition: all 0.5s;
-  }
-  .card:hover{
-    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
-    transform: scale(1.02);
-  } */
-  
-  /* project ends */
-  /* partners starts */
-  /* .brand{
+  #career a{
+    background-color: #603808  !important;;
     transition: all 0.2s ease-in-out;
-    margin-bottom: 25px;
   }
-  .brand:hover{
-    transform: scale(1.2);
+  #career a:hover{
+    transform: scale(1.05);
   }
-  @media (max-width:767px){
-    .brand{
-      margin-left: 100px;
-      
-    }
-  }
-  @media (max-width: 550px){
-    .brand{
-      margin-left: 50px;
-    }
-  } */
-  
-  /* partners ends */
+  /* career ends */
   /* contact */
   #contact{
     background: url("../img/EsaadImages/contactbg.jpeg") no-repeat center center;
@@ -349,14 +288,10 @@ html {
     top: 0;
     bottom: 0;
   }
-  
-
     #contact {
       background-attachment: fixed;
     }
- 
-  
-  
+
   /* contact ends */
   
   /* back to top */
@@ -365,4 +300,7 @@ html {
     right: 20px;
     z-index: 99;
     bottom: 45px;
+  }
+  .custom-button{
+    background-color: #603808 !important;
   }

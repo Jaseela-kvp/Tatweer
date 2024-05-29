@@ -69,13 +69,13 @@ html {
 .font-custom{
   font-size: 50px;
   font-weight: 500;
-  letter-spacing: 0.1ch;
+  letter-spacing: 0.01ch;
 }
 
 
 @media screen and (max-width: 767px){
   .font-custom{
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
     font-weight: 500;
   }
