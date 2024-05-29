@@ -173,11 +173,11 @@ html {
     bottom: 0;
   }
   
-  @media (min-width: 1024px) {
+
     #contact {
       background-attachment: fixed;
     }
-  }
+ 
   
 
   
