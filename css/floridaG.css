@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+html {
+    scroll-behavior: smooth; }
+  .custom-button{
+    background-color: rgba(28, 28, 28, 0.75);
+  }
+  .custom-button:hover{
+    background-color: rgba(28, 28, 28, 0.4);
+  }
+  .custom-heading{
+    font-family: "Dancing Script", cursive;
+  }
+  #intro {
+    background: url("../img/floridaRealIntro.jpg") no-repeat center center;
+    background-size: cover; }
+  
+  .top-nav-collapse {
+    background-color: white!important; }
+  
+  .navbar:not(.top-nav-collapse) {
+    background: white!important; }
+  
+  #intro .h6 {
+    font-weight: 300;
+    line-height: 1.7; }
+  #intro{
+    margin-top: 120px;
+  }
+  .site-bg-img {
+    height: 70vh;
+    min-height: 480px;
+    max-height: 1080px; }
+  
+  .hm-gradient .site-bg-img {
+    background: white;
+    background: linear-gradient(45deg,rgba(53, 53, 53, 0.5), rgba(124, 124, 124, 0.5) 100%);
+}
+
+  
+  @media (max-width: 450px) {
+    .margins {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+     }
+  
+  .navbar{
+    box-shadow: none;
+  }
+  
+  /* Navbar items */
+  .nav-link{
+    position: relative;
+  }
+  .nav-link::after{
+    content:'';
+    transition: all 0.5s;
+    opacity: 0;
+    height: 2px;
+    width: 0;
+    background-color: #603808;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+    width: 70%;
+  }
+  .navbar ul li a{
+    font-weight: 400;
+    color:#603808;
+   }
+  /* intro section */
+  .font-custom{
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 0.01ch;
+  
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  
+  @media screen and (max-width: 767px){
+    .font-custom{
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: 500;
+    }
+   
+    #about p{
+      line-height: 1.5;
+    }
+  }
+  /* ends */
+
+   
+  /* about */
+  /* @media screen and (min-width: 767px){
+    #about p{
+      line-height: 2;
+    }
+  } */
+  /* about ends */
+  
+  /* section title */
+  /* .section-title h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 60px;
+  }
+  
+  .section-title.text-start h1 {
+    padding-left: 0;
+  }
+  
+  .section-title h1::before,
+  .section-title h1::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 5px;
+    bottom: 0;
+    background: rgba(28, 28, 28, 0.75);
+  }
+  
+  .section-title h1::before {
+    left: 0;
+  }
+  
+  .section-title h1::after {
+    right: 0;
+  }
+  
+  .section-title.text-start h1::before {
+    display: none;
+  } */
+  /* section title ends */
+  /* section-title1 starts */
+  
+  
+  /* .section-title1 h1::before,
+  .section-title1 h1::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 5px;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.75);
+  } */
+  
+  
+  /* sectionn-title1 ends */
+  /* message section */
+/*   
+  #message img{
+    border-radius: 25px;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+  }
+  #message .italicPara{
+   font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    color:rgba(28, 28, 28, 0.75)
+  } */
+  /* message ends */
+  /* projects starts */
+  
+  /* .card{
+    transition: all 0.5s;
+  }
+  .card:hover{
+    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
+    transform: scale(1.02);
+  } */
+  
+  /* project ends */
+  /* partners starts */
+  /* .brand{
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 25px;
+  }
+  .brand:hover{
+    transform: scale(1.2);
+  }
+  @media (max-width:767px){
+    .brand{
+      margin-left: 100px;
+      
+    }
+  }
+  @media (max-width: 550px){
+    .brand{
+      margin-left: 50px;
+    }
+  }
+  .custom-brand-a:hover{
+     border-bottom: 2px solid #d3a500;
+  }
+   */
+  /* partners ends */
+  /* contact */
+  
+  iframe{
+    border-radius: 5px; 
+  } 
+  .map{
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+  }
+  .map iframe{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 80%;
+    height: 80%;
+  }
+  #contact {
+    background: url("../img/tatweerImages/contact.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  
+    #contact {
+      background-attachment: fixed;
+    }
+  
+  
+  /* contact ends */
+  
+  /* back to top */
+  .arrow-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    bottom: 45px;
+  }
