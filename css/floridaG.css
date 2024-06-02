@@ -14,9 +14,9 @@ html {
     font-family: "Dancing Script", cursive;
   }
   #intro {
-    background: url("../img/floridaRealIntro.jpg") no-repeat center center;
+    background: url("../img/floridaREAL/floridaRealIntro1.png") no-repeat center center;
     background-size: cover; }
-  
+ 
   .top-nav-collapse {
     background-color: white!important; }
   
@@ -60,7 +60,7 @@ html {
     opacity: 0;
     height: 2px;
     width: 0;
-    background-color: #603808;
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 9px;
@@ -71,7 +71,10 @@ html {
   }
   .navbar ul li a{
     font-weight: 400;
-    color:#603808;
+    color:black;
+   }
+   .logo{
+    width: 250px;
    }
   /* intro section */
   .font-custom{
@@ -94,8 +97,37 @@ html {
     #about p{
       line-height: 1.5;
     }
+    .logo{
+      width:170px;
+    }
   }
+  
   /* ends */
+  /* properties */
+  #properties{
+    background: url("../img/floridaREAL/aboutE.png") no-repeat center center;
+  background-size: cover;
+  }
+   #properties {
+    padding: 80px 0;
+    background: url("../img/floridaREAL/aboutE.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+ #properties::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+   #properties {
+      background-attachment: fixed;
+    }
+  /* properties ends */
 
    
   /* about */
