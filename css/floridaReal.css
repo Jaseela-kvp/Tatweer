@@ -61,7 +61,7 @@ html {
     opacity: 0;
     height: 2px;
     width: 0;
-    background-color: black;
+    background-color:#d00000; 
     position: absolute;
     bottom: 0;
     left: 9px;
@@ -82,7 +82,13 @@ html {
     font-size: 70px;
     font-weight: 500;
     letter-spacing: 0.01ch;
-    color: white;
+    color:white;
+    text-shadow: 
+    -1px -1px 0 #d00000,  
+     1px -1px 0 #d00000,
+    -1px  1px 0 #d00000,
+     1px  1px 0 #d00000,
+     6px  6px 10px rgba(0,0,0,0.5); 
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
@@ -90,11 +96,8 @@ html {
   
   @media screen and (max-width: 767px){
     .font-custom{
-      font-size: 30px;
-      line-height: 50px;
-      font-weight: 500;
+      font-size: 60px;
     }
-   
     #about p{
       line-height: 1.5;
     }
