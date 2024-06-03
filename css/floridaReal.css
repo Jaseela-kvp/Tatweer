@@ -12,6 +12,7 @@ html {
   }
   .custom-heading{
     font-family: "Dancing Script", cursive;
+    color: #d00000;
   }
   #intro {
     background: url("../img/floridaREAL/floridaRealIntro1.png") no-repeat center center;
@@ -81,7 +82,7 @@ html {
     font-size: 70px;
     font-weight: 500;
     letter-spacing: 0.01ch;
-  
+    color: white;
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
