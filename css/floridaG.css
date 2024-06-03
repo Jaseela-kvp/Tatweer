@@ -5,7 +5,7 @@
 html {
     scroll-behavior: smooth; }
   .custom-button{
-    background-color: rgba(28, 28, 28, 0.75);
+    background-color: rgb(0, 0, 0);
   }
   .custom-button:hover{
     background-color: rgba(28, 28, 28, 0.4);
@@ -129,116 +129,20 @@ html {
     }
   /* properties ends */
 
+/* career */
+.custom-margin{
+  margin-top: 200px;
+}
+/* career ends */
    
-  /* about */
-  /* @media screen and (min-width: 767px){
-    #about p{
-      line-height: 2;
-    }
-  } */
-  /* about ends */
-  
-  /* section title */
-  /* .section-title h1 {
-    position: relative;
-    display: inline-block;
-    padding: 0 60px;
-  }
-  
-  .section-title.text-start h1 {
-    padding-left: 0;
-  }
-  
-  .section-title h1::before,
-  .section-title h1::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 5px;
-    bottom: 0;
-    background: rgba(28, 28, 28, 0.75);
-  }
-  
-  .section-title h1::before {
-    left: 0;
-  }
-  
-  .section-title h1::after {
-    right: 0;
-  }
-  
-  .section-title.text-start h1::before {
-    display: none;
-  } */
-  /* section title ends */
-  /* section-title1 starts */
   
   
-  /* .section-title1 h1::before,
-  .section-title1 h1::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 5px;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.75);
-  } */
   
   
-  /* sectionn-title1 ends */
-  /* message section */
-/*   
-  #message img{
-    border-radius: 25px;
-    border: 3px solid white;
-    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
-  }
-  #message .italicPara{
-   font-size: 25px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 25px;
-    color:rgba(28, 28, 28, 0.75)
-  } */
-  /* message ends */
-  /* projects starts */
   
-  /* .card{
-    transition: all 0.5s;
-  }
-  .card:hover{
-    box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
-    transform: scale(1.02);
-  } */
-  
-  /* project ends */
-  /* partners starts */
-  /* .brand{
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 25px;
-  }
-  .brand:hover{
-    transform: scale(1.2);
-  }
-  @media (max-width:767px){
-    .brand{
-      margin-left: 100px;
-      
-    }
-  }
-  @media (max-width: 550px){
-    .brand{
-      margin-left: 50px;
-    }
-  }
-  .custom-brand-a:hover{
-     border-bottom: 2px solid #d3a500;
-  }
-   */
-  /* partners ends */
   /* contact */
   
-  iframe{
+  /* iframe{
     border-radius: 5px; 
   } 
   .map{
@@ -252,8 +156,8 @@ html {
     left: 35px;
     width: 80%;
     height: 80%;
-  }
-  #contact {
+  } */
+  /* #contact {
     background: url("../img/tatweerImages/contact.png") no-repeat;
     background-position: center center;
     background-size: cover;
@@ -273,7 +177,7 @@ html {
     #contact {
       background-attachment: fixed;
     }
-  
+   */
   
   /* contact ends */
   

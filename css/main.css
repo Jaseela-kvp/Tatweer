@@ -144,11 +144,11 @@ html {
 /* sectionn-title1 ends */
 /* message section */
 
-#message img{
+/* #message img{
   border-radius: 25px;
   border: 3px solid white;
   box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
-}
+} */
 #message .italicPara{
  font-size: 25px;
   font-style: italic;
@@ -156,6 +156,29 @@ html {
   line-height: 25px;
   color:rgba(28, 28, 28, 0.75)
 }
+#message{
+  background: url("../img/tatweerImages/about-bg.jpg") no-repeat center center;
+background-size: cover;
+}
+ #message {
+  padding: 80px 0;
+  background: url("../img/tatweerImages/about-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#message::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+ #message {
+    background-attachment: fixed;
+  }
 /* message ends */
 /* projects starts */
 
