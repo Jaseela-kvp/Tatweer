@@ -104,10 +104,6 @@ html {
   /* about section ends */
 
   /* properties */
-  #properties{
-    background: url("../img/floridaREAL/aboutE.png") no-repeat center center;
-  background-size: cover;
-  }
    #properties {
     padding: 80px 0;
     background: url("../img/floridaREAL/aboutE.png") no-repeat;
@@ -134,52 +130,6 @@ html {
   margin-top: 200px;
 }
 /* career ends */
-   
-  
-  
-  
-  
-  
-  /* contact */
-  
-  /* iframe{
-    border-radius: 5px; 
-  } 
-  .map{
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-  }
-  .map iframe{
-    position: absolute;
-    top: 30px;
-    left: 35px;
-    width: 80%;
-    height: 80%;
-  } */
-  /* #contact {
-    background: url("../img/tatweerImages/contact.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  #contact::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  
-  
-    #contact {
-      background-attachment: fixed;
-    }
-   */
-  
-  /* contact ends */
   
   /* back to top */
   .arrow-icon {

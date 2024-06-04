@@ -2,11 +2,12 @@ html {
     scroll-behavior: smooth; }
   #intro {
     background: url("../img/EsaadImages/intro1.jpg") no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+     }
   
   .top-nav-collapse {
     background-color: #faedcd;}
-  
+ 
   .navbar:not(.top-nav-collapse) {
     background: transparent !important; }
   
@@ -14,7 +15,11 @@ html {
   @media (max-width: 768px) {
     .navbar .navbar-collapse ul{
       background-color: transparent;
-    } }
+    } 
+    #intro {
+      background: url("../img/EsaadImages/intro5.jpeg") no-repeat center center;
+      background-size: cover; }
+  }
   
   #intro .h6 {
     font-weight: 300;
@@ -66,13 +71,13 @@ html {
   }
   /* intro section */
   .font-custom{
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 500;
     color: #603808;
   }
   
   .word-font{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 500;
   }
   .logo{
@@ -80,7 +85,7 @@ html {
   }
   @media screen and (max-width: 767px){
     .font-custom{
-      font-size: 55px;
+      font-size: 50px;
       line-height: 60px;
       font-weight: 500;
     }
@@ -92,7 +97,7 @@ html {
       line-height: 1.5;
     }
     .logo{
-      width:200px;
+      width:150px;
     }
   }
   /* ends */

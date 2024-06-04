@@ -182,7 +182,7 @@ background-size: cover;
 /* message ends */
 /* projects starts */
 
-.card{
+ .card{
   transition: all 0.5s;
 }
 .card:hover{
@@ -190,7 +190,65 @@ background-size: cover;
   transform: scale(1.02);
 }
 
+/* New styles for overlay effect */
+/* .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  color: white;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+} */
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%; /* Initially hide the overlay below the card */
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: bottom 1s ease; /* Transition effect for bottom property */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  color: white;
+}
+
+.card:hover .overlay {
+  bottom: 0; /* Move overlay up to cover the card */
+}
 /* project ends */
+
 /* partners starts */
 .brand{
   transition: all 0.2s ease-in-out;
