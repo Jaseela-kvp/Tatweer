@@ -154,31 +154,50 @@ html {
   font-style: italic;
   font-weight: 500;
   line-height: 25px;
-  color:rgba(28, 28, 28, 0.75)
+  color:rgb(28, 28, 28)
 }
 #message{
-  background: url("../img/tatweerImages/about-bg.jpg") no-repeat center center;
+  background: url("../img/tatweerImages/msgbg2.jpg") no-repeat center center;
 background-size: cover;
 }
- #message {
-  padding: 80px 0;
-  background: url("../img/tatweerImages/about-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
+ 
+  .blockclass {
   position: relative;
+  line-height: 2;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+@media (max-width:767px){
+  .blockclass{
+    line-height: 1.5;
+    font-size: 16px;
+  }
 }
 
-#message::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.blockclass:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 28px;
+    color: #E5E5E5;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
 }
- #message {
-    background-attachment: fixed;
-  }
+/* .blockclass:after {
+  content: "\f10e";
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 20px;
+  color: #E5E5E5;
+  top: 90;
+  left: 30;
+  z-index: 0;
+} */
+
+
+
 /* message ends */
 /* projects starts */
 
