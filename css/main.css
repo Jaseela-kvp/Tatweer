@@ -75,7 +75,7 @@ html {
 
 @media screen and (max-width: 767px){
   .font-custom{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 50px;
     font-weight: 500;
   }
@@ -139,38 +139,43 @@ html {
   bottom: 0;
   background: rgba(255, 255, 255, 0.75);
 }
-
-
 /* sectionn-title1 ends */
-/* message section */
 
-/* #message img{
-  border-radius: 25px;
-  border: 3px solid white;
-  box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
-} */
+/* message section */
 #message .italicPara {
     font-size: 24px;
     font-style: italic;
     font-weight: 500;
-    color: rgb(149, 149, 149);
-  }
-  #message {
-    background: url("../img/tatweerImages/msgbg3.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  .blockclass {
-    position: relative;
-    line-height: 2;
-    font-size: 20px;
     color: rgb(255, 255, 255);
   }
-  @media (max-width:767px) {
-    .blockclass {
-      line-height: 1.7;
-      font-size: 16px;
-    }
+ 
+  #message {
+    background: url("../img/tatweerImages/msgbg3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
   }
+  
+  #message::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  
+    #message {
+      background-attachment: fixed;
+    }
+  .blockclass {
+    position: relative;
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgb(226, 226, 226);
+  }
+ 
   .blockclass:before {
     content: "\f10d";
     font-family: FontAwesome;
@@ -181,64 +186,17 @@ html {
     left: 0;
     z-index: 0;
   }
-/* .blockclass:after {
-  content: "\f10e";
-  font-family: FontAwesome;
-  position: absolute;
-  font-size: 20px;
-  color: #E5E5E5;
-  top: 90;
-  left: 30;
-  z-index: 0;
-} */
-
-
-
 /* message ends */
-/* projects starts */
 
- .card{
-  transition: all 0.5s;
-}
+/* projects starts */
 .card:hover{
   box-shadow: 0 4px 6px rgba(28, 28, 28, 0.75);
   transform: scale(1.02);
 }
-
-/* New styles for overlay effect */
-/* .card {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay-content {
-  color: white;
-}
-
-.card:hover .overlay {
-  opacity: 1;
-} */
-
-
 .card {
   position: relative;
   overflow: hidden;
+  transition: all 0.5s;
 }
 
 .overlay {
@@ -274,7 +232,7 @@ html {
 }
 @media (max-width:767px){
   .brand{
-    margin-left: 100px;
+    margin-left: 90px;
     
   }
 }

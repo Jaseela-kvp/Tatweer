@@ -16,9 +16,6 @@ html {
     .navbar .navbar-collapse ul{
       background-color: transparent;
     } 
-    #intro {
-      background: url("../img/EsaadImages/intro5.jpeg") no-repeat center center;
-      background-size: cover; }
   }
   
   #intro .h6 {
@@ -85,7 +82,7 @@ html {
   }
   @media screen and (max-width: 767px){
     .font-custom{
-      font-size: 50px;
+      font-size: 45px;
       line-height: 60px;
       font-weight: 500;
     }
