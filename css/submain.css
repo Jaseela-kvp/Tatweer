@@ -55,8 +55,14 @@ html {
 .custom_margin{
   margin-top: 100px;
 }
-
-
+.logo{
+  width: 220px;
+}
+@media (max-width: 768px) {
+   .logo{
+    width:200px;
+   }
+}
 /*** Section Title ***/
 .section-title h1 {
   position: relative;
