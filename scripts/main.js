@@ -16,7 +16,7 @@ function closeNavbar() {
   // project
   
   function filterProjects(status) {
-    let allProjects = document.querySelectorAll('.card');
+    let allProjects = document.querySelectorAll('.overlay-class');
     allProjects.forEach(project => {
       if (status === 'all') {
         project.style.display = 'block';
