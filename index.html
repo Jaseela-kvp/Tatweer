@@ -230,15 +230,15 @@
       </div>
       <div class="row mx-auto">
         <div class="col-md-4 col-xs-10 text-center wow fadeInUp" data-wow-delay="1s ">
-          <a href="floridaReal.html"><img src="img/tatweerImages/floridaReal Estate.png" class="img-fluid brand "  style="width:250px;"  alt="Florida Real Estate Logo"></a>
+          <a href="floridaReal.html"><img src="img/tatweerImages/floridaReal Estate.png" class="img-fluid brand "  style="width:250px; height:100px;"  alt="Florida Real Estate Logo"></a>
           <p ><a href="floridaReal.html" style="color:#d3a500" class="custom-brand-a">Learn More  <i class="fa-solid fa-circle-chevron-right"></i></a></p>
         </div>
         <div class="col-md-4 col-xs-10 text-center  wow fadeInUp" data-wow-delay="1s">
-            <a href="esaad.html"><img src="img/EsaadImages/logo/logo2.png" class="img-fluid brand " style="width:250px;" alt="Esaad Logo">  </a>
+            <a href="esaad.html"><img src="img/EsaadImages/logo/logo2.png" class="img-fluid brand " style="width:250px; height:100px;" alt="Esaad Logo">  </a>
             <p ><a href="esaad.html" style="color:#d3a500" class="custom-brand-a">Learn More <i class="fa-solid fa-circle-chevron-right"></i> </a></p>
           </div>
         <div class="col-md-4 col-xs-10  text-center  wow fadeInUp" data-wow-delay="1s">
-          <a href="floridaGeneral.html"><img src="img/tatweerImages/FloridaGeneral.png" class="img-fluid brand " style="width:250px;" alt="Florida General Logo"></a>
+          <a href="floridaGeneral.html"><img src="img/tatweerImages/FloridaGeneral.png" class="img-fluid brand " style="width:250px; height:100px;" alt="Florida General Logo"></a>
           <p ><a href="floridaGeneral.html" style="color:#d3a500" class="custom-brand-a">Learn More <i class="fa-solid fa-circle-chevron-right"></i></a></p>
         </div>     
     </div>
@@ -318,6 +318,43 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <script>new WOW().init();</script>
 <!-- script ends  -->
+ <script>
+// preloader starts
+// Set the progress bar fill time (in milliseconds)
+const PROGRESS_FILL_TIME = 3000;
+
+window.addEventListener('load', function() {
+    // Disable scrolling during preloading
+    document.body.style.overflow = 'hidden';
+
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+    const progressBar = document.getElementById('progress-bar');
+
+    // Start filling the progress bar
+    progressBar.style.width = '100%';
+
+    // Set a timeout to start the upward movement after the progress bar is filled
+    setTimeout(() => {
+        // Add class for moving the preloader from right to left
+        preloader.classList.add('move-left');
+
+        // Hide the preloader after transition ends
+        preloader.addEventListener('transitionend', function() {
+            preloader.style.display = 'none';
+
+            // Enable scrolling after preloading is done
+            document.body.style.overflow = 'auto';
+
+            // Show the content from the top
+            content.style.display = 'block';
+            
+            // Scroll to the top of the content immediately
+            window.scrollTo(0, 0); // Scroll to the top of the page
+        });
+    }, PROGRESS_FILL_TIME + 2000); // Adjust timing to match the transition duration in CSS
+});
+</script>
 
   </body>
 </html>
