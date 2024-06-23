@@ -24,12 +24,12 @@ html {
   background-color: white!important;
 }
 
-.top-nav-collapse .nav-link {
+/* .top-nav-collapse .nav-link {
   color: black!important;
-}
+} */
 
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+  background: white!important;
 }
 
 
@@ -73,7 +73,6 @@ html {
 /* Navbar items */
 .nav-link {
   position: relative;
-  color: inherit; /* Ensure the link inherits the color from its parent */
   font-weight: 400;
 }
 
@@ -93,7 +92,10 @@ html {
   opacity: 1;
   width: 70%;
 }
-
+.navbar ul li a{
+  font-weight: 400;
+  color:black !important;
+ }
 
   /* intro section */
   .font-custom{
