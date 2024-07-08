@@ -412,7 +412,7 @@ iframe{
 
 #contact .btn.btn-link:hover {
     color: #ffb600;
-    letter-spacing: 1px;
+    transform: scale(1.02);
     box-shadow: none;
     text-decoration: none;
 }
