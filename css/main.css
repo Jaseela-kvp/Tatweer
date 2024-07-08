@@ -1,12 +1,17 @@
 html {
   scroll-behavior: smooth; }
+.wow {
+    visibility: hidden;
+  }
 .custom-button{
   background-color: rgba(28, 28, 28, 0.75);
 }
 .custom-button:hover{
   background-color: rgba(28, 28, 28, 0.4);
 }
-
+.custom-padding{
+  padding-top: 70px;
+}
 /* preloader starts */
 #preloader {
   display: flex;
@@ -59,7 +64,7 @@ html {
   background-color: white !important; }
 
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important; }
+  background: white ; }
 
 .top-nav-collapse .nav-link {
     color: black!important;
@@ -67,11 +72,38 @@ html {
   .top-nav-collapse .nav-link::after{
     background-color: black !important;
   } 
-/* @media (max-width: 768px) {
-  .navbar .navbar-collapse ul{
-    background-color: rgba(28, 28, 28, 0.75);
-  } } */
-
+  .nav-link{
+    position: relative;
+  }
+  .nav-link::after{
+    content:'';
+    transition: all 0.5s;
+    opacity: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+    width: 70%;
+  }
+  .logo{
+    width: 220px;
+  }
+  .navbar .navbar-collapse ul {
+    background-color: white;
+}
+.navbar .navbar-collapse .nav-link{
+  color: black !important;
+  font-weight: 400;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+  
 #intro .h6 {
   font-weight: 300;
   line-height: 1.7; }
@@ -98,50 +130,7 @@ html {
 }
 
 /* Navbar items */
-.nav-link{
-  position: relative;
-}
-.nav-link::after{
-  content:'';
-  transition: all 0.5s;
-  opacity: 0;
-  height: 1px;
-  width: 0;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  left: 9px;
-}
-.nav-link:hover::after{
-  opacity: 1;
-  width: 70%;
-}
-.logo{
-  width: 220px;
-}
-@media (max-width: 768px) {
-  .navbar .navbar-collapse ul {
-      background-color: white;
-  }
-  .navbar .navbar-collapse .nav-link{
-      color: black !important;
-  }
- 
-  .nav-link::after{
-    content:'';
-    transition: all 0.5s;
-    opacity: 0;
-    height: 1px;
-    width: 0;
-    background-color: black !important;
-    position: absolute;
-    bottom: 0;
-    left: 9px;
-  }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-  }
-}
+
 /* intro section */
 .font-custom{
   font-size: 50px;
@@ -356,7 +345,7 @@ html {
 }
 @media (max-width: 550px){
   .brand{
-    margin-left: 50px;
+    margin-left: 40px;
   }
 }
 .custom-brand-a:hover{
@@ -401,7 +390,32 @@ iframe{
   #contact {
     background-attachment: fixed;
   }
+  #contact .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
 
+#contact .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+#contact .btn.btn-link:hover {
+    color: #ffb600;
+    letter-spacing: 1px;
+    box-shadow: none;
+    text-decoration: none;
+}
 
 /* contact ends */
 
