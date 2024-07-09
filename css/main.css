@@ -156,9 +156,42 @@ html {
 /* ends */
  
 /* about */
-@media screen and (min-width: 767px){
-  #about p{
-    line-height: 2;
+
+  
+.lead {
+  padding: 0 2rem;
+}
+
+  #about{
+    background: url("../img/tatweerImages/aboutbgE.png") no-repeat;
+    background-position: right;
+    
+  }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+ 
+ 
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+}
+
+@media (max-width: 991px) {
+  .lead {
+    padding: 0 1rem;
+    font-weight: 400;
+  }
+  .video-container {
+    padding: 0 1rem;
   }
 }
 /* about ends */
