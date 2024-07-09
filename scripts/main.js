@@ -30,7 +30,29 @@ function closeNavbar() {
   }).init();
 
 
+// vedio
+document.addEventListener('DOMContentLoaded', (event) => {
+  const video = document.getElementById('about-video');
+  const playButton = document.getElementById('play-button');
 
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = 'none';
+    } else {
+      video.pause();
+      playButton.style.display = 'block';
+    }
+  });
+
+  playButton.addEventListener('click', () => {
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  // Hide the play button initially since the video is autoplayed
+  playButton.style.display = video.paused ? 'block' : 'none';
+});
 
   // project
   

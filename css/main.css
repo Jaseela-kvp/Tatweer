@@ -158,15 +158,11 @@ html {
 /* about */
 
   
-.lead {
+/* .lead {
   padding: 0 2rem;
 }
 
-  #about{
-    background: url("../img/tatweerImages/aboutbgE.png") no-repeat;
-    background-position: right;
-    
-  }
+
 
 .video-container {
   display: flex;
@@ -192,6 +188,75 @@ html {
   }
   .video-container {
     padding: 0 1rem;
+  }
+} */
+ #about{
+  background: url("../img/tatweerImages/pattern.png") no-repeat;
+    background-position: center right;
+    
+  
+ }
+ #about h1{
+  margin-bottom: 50px;
+ }
+ #about p{
+  line-height: 2;
+  font-size: 18px;
+  padding-top: 50px;
+  margin-bottom: 0;
+ }
+.play-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+  display: none; /* Initially hidden as video is autoplayed */
+}
+
+.play-button i {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+#about-video{
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  
+}
+.video-container:hover .play-button {
+  display: block;
+}
+@media (max-width:991px){
+  #about{
+    background: url("../img/tatweerImages/pattern.png") no-repeat;
+      background-position: top right;
+    
+   }
+   #about h1{
+    margin-bottom: 5px;
+   }
+}
+@media (min-width: 992px) {
+  .container.about {
+    max-width: 100% !important;
+  }
+ 
+  .about-text {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-text {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-text {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
   }
 }
 /* about ends */
