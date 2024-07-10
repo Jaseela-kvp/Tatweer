@@ -56,10 +56,60 @@ html {
 }
 /* preloader ends */
 
-#intro {
+/* #intro {
   background: url("../img/tatweerImages/intro.jpg") no-repeat center center;
-  background-size: cover; }
-
+  background-size: cover; } */
+  #intro {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .site-bg-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .site-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+  
+  .site-bg-img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .white-text {
+    color: #fff;
+   
+  }
+  #intro h1{
+    font-weight: 600;
+  }
+  .font-custom {
+    font-family: 'YourCustomFont', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .font-custom {
+      font-size: 24px;
+    }
+  
+    #intro h1 {
+      font-size: 28px;
+    }
+  }
+  /* end */
 .top-nav-collapse {
   background-color: white !important; }
 
@@ -104,20 +154,20 @@ html {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
   
-#intro .h6 {
+/* #intro .h6 {
   font-weight: 300;
-  line-height: 1.7; }
+  line-height: 1.7; } */
 
   
 
-.site-bg-img {
+ .site-bg-img {
   height: 100vh;
   min-height: 480px;
   max-height: 1080px; }
 
-.hm-gradient .site-bg-img {
+/*.hm-gradient .site-bg-img {
   background: rgba(42, 27, 161, 0.7);
-  background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%); }
+  background: linear-gradient(45deg, rgba(1, 1, 1, 0.7), rgba(52, 52, 52, 0.7) 100%); } */
 
 @media (max-width: 450px) {
   .margins {
