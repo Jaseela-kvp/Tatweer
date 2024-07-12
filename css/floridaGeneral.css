@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -17,29 +16,25 @@ html {
   background: url("../img/floridaGeneral/intro.jpg") no-repeat center center;
   background-size: cover;
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 182, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
-.top-nav-collapse {
-  background-color: white!important;
-}
 
-/* .top-nav-collapse .nav-link {
-  color: black!important;
-} */
+.top-nav-collapse {
+  background-color: white !important;
+}
 
 .navbar:not(.top-nav-collapse) {
-  background: white!important;
+  background: white !important;
 }
-
-
 
 @media (max-width: 768px) {
   .navbar .navbar-collapse ul {
-      background-color: white;
+    background-color: white;
   }
-  .navbar .navbar-collapse .nav-link{
-      color: black !important;
+  .navbar .navbar-collapse .nav-link {
+    color: black !important;
   }
 }
 
@@ -56,13 +51,17 @@ html {
 
 .hm-gradient .site-bg-img {
   background: rgba(42, 27, 161, 0.7);
-  background: linear-gradient(45deg, rgba(215, 178, 29, 0.7), rgba(222, 200, 135, 0.7) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(215, 178, 29, 0.7),
+    rgba(222, 200, 135, 0.7) 100%
+  );
 }
 
 @media (max-width: 450px) {
   .margins {
-      margin-right: 1rem;
-      margin-left: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 
@@ -77,7 +76,7 @@ html {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   transition: all 0.5s;
   opacity: 0;
   height: 2px;
@@ -92,46 +91,50 @@ html {
   opacity: 1;
   width: 70%;
 }
-.navbar ul li a{
-  font-weight: 400;
-  color:black !important;
- }
 
-  /* intro section */
-  .font-custom{
-    font-size: 50px;
+.navbar ul li a {
+  font-weight: 400;
+  color: black !important;
+}
+
+/* intro section */
+.font-custom {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.01ch;
+}
+
+.logo {
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .font-custom {
+    font-size: 40px;
+    line-height: 50px;
     font-weight: 500;
-    letter-spacing: 0.01ch;
   }
-  .logo{
-    width:200px
+
+  #about p {
+    line-height: 1.5;
   }
-  
-  @media screen and (max-width: 767px){
-    .font-custom{
-      font-size: 40px;
-      line-height: 50px;
-      font-weight: 500;
-    }
-   
-    #about p{
-      line-height: 1.5;
-    }
-    .logo{
-      width:150px;
-    }
+  .logo {
+    width: 150px;
   }
-  
-  /* ends */
-   /* heading section */
-.section-title{
+}
+
+/* ends */
+
+/* heading section */
+.section-title {
   font-family: "Caveat", cursive;
   font-size: 30px;
   font-weight: 700;
- position: relative;
+  position: relative;
 }
+
 .section-title::after {
-  content: '';
+  content: "";
   transition: all 0.5s;
   opacity: 1;
   height: 3px;
@@ -139,65 +142,65 @@ html {
   background-color: #ffb600;
   position: absolute;
   bottom: 0;
-  
 }
-   /* heading section ends */
-  /* about */
-  .section-title h1 {
-    position: relative;
-    display: inline-block;
-    padding: 0 60px;
+/* heading section ends */
+
+/* about */
+.section-title h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+}
+.section-title.text-start h1 {
+  padding-left: 0;
+}
+
+.section-title h1::before,
+.section-title h1::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 5px;
+  bottom: 0;
+  background: var(--dark);
+}
+
+.section-title h1::before {
+  left: 0;
+}
+
+.section-title h1::after {
+  right: 0;
+}
+
+.section-title.text-start h1::before {
+  display: none;
+}
+@media (min-width: 992px) {
+  .container.about {
+    max-width: 100% !important;
   }
-  .section-title.text-start h1 {
-    padding-left: 0;
+
+  .about-text {
+    padding-right: calc(((100% - 960px) / 2) + 0.75rem);
   }
-  
-  .section-title h1::before,
-  .section-title h1::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 5px;
-    bottom: 0;
-    background: var(--dark);
+}
+
+@media (min-width: 1200px) {
+  .about-text {
+    padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
   }
-  
-  .section-title h1::before {
-    left: 0;
+}
+
+@media (min-width: 1400px) {
+  .about-text {
+    padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
   }
-  
-  .section-title h1::after {
-    right: 0;
-  }
-  
-  .section-title.text-start h1::before {
-    display: none;
-  }
-  @media (min-width: 992px) {
-    .container.about {
-        max-width: 100% !important;
-    }
-  
-    .about-text  {
-        padding-right: calc(((100% - 960px) / 2) + .75rem);
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .about-text  {
-        padding-right: calc(((100% - 1140px) / 2) + .75rem);
-    }
-  }
-  
-  @media (min-width: 1400px) {
-    .about-text  {
-        padding-right: calc(((100% - 1320px) / 2) + .75rem);
-    }
-  }
-  .ts-service-box .ts-service-icon i {
-    font-size: 36px;
-    float: left;
-    color: #ffb600;
+}
+.ts-service-box .ts-service-icon i {
+  font-size: 36px;
+  float: left;
+  color: #ffb600;
 }
 .ts-service-box .ts-service-box-content {
   margin-left: 62px;
@@ -214,185 +217,184 @@ html {
   line-height: 28px;
   font-weight: 500;
 }
-  /* about ends */
+/* about ends */
 
-  /* our service starts */
-  .service_section {
-    position: relative;
-  }
-  
+/* our service starts */
+.service_section {
+  position: relative;
+}
+
+.service_section .service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.service_section .box {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service_section .box:hover {
+  transform: translateY(-25px);
+}
+
+.service_section .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  margin-bottom: 15px;
+}
+
+.service_section .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.3s;
+}
+
+.service_section .detail-box h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service_section .detail-box p {
+  font-weight: 300;
+}
+
+.center-image-container {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
   .service_section .service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    gap: 20px;
-    justify-items: center;
-    align-items: start;
-  }
-  
-  .service_section .box {
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 5px;
-    transition: transform 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .service_section .box {
+    width: 100%;
     text-align: center;
   }
-  
-  .service_section .box:hover {
-    transform: translateY(-25px);
-  }
-  
-  .service_section .img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    height: 125px;
-    margin-bottom: 15px;
-  }
-  
-  .service_section .img-box img {
-    max-width: 100%;
-    max-height: 100%;
-    transition: all 0.3s;
-  }
-  
-  .service_section .detail-box h5 {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .service_section .detail-box p {
-    font-weight: 300;
-  }
-  
-  .center-image-container {
-    grid-column: 2;
-    grid-row: 1 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
-  }
-  
-  .center-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .service_section .service-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service_section .box {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .center-image-container {
-      order: 3; /* Place the image in the middle */
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 20px;
-    }
-  
-    .service_section .box:nth-child(1) {
-      order: 1;
-    }
-  
-    .service_section .box:nth-child(2) {
-      order: 2;
-    }
-  
-    .service_section .box:nth-child(4) {
-      order: 4;
-    }
-  
-    .service_section .box:nth-child(5) {
-      order: 5;
-    }
-  }
-  
-  /* our service ends */
 
-  /* contact */
-  
-  iframe{
-    border-radius: 5px; 
-  } 
-  .map{
-    position: relative;
+  .center-image-container {
+    order: 3; /* Place the image in the middle */
     width: 100%;
-    padding-top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
   }
-  .map iframe{
-    position: absolute;
-    top: 30px;
-    left: 35px;
-    width: 80%;
-    height: 80%;
+
+  .service_section .box:nth-child(1) {
+    order: 1;
   }
-  #contact {
-    background: url("../img/floridaGeneral/contact1.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+
+  .service_section .box:nth-child(2) {
+    order: 2;
   }
-  
-  #contact::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+
+  .service_section .box:nth-child(4) {
+    order: 4;
   }
-  
-  
-    #contact {
-      background-attachment: fixed;
-    }
-    .footer .btn.btn-link {
-      display: block;
-      margin-bottom: 5px;
-      padding: 0;
-      text-align: left;
-      color: #FFFFFF;
-      font-size: 15px;
-      font-weight: normal;
-      text-transform: capitalize;
-      transition: .3s;
+
+  .service_section .box:nth-child(5) {
+    order: 5;
   }
-  
-  .footer .btn.btn-link::before {
-      position: relative;
-      content: "\f105";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      margin-right: 10px;
-  }
-  
-  .footer .btn.btn-link:hover {
-      color: #ffb600;
-      letter-spacing: 1px;
-      box-shadow: none;
-      text-decoration: none;
-  }
-  /* contact ends */
-  
-  /* back to top */
-  .arrow-icon {
-    position: fixed;
-    right: 20px;
-    z-index: 99;
-    bottom: 45px;
-    background-color: #ffb600;
-  }
+}
+
+/* our service ends */
+
+/* contact */
+
+iframe {
+  border-radius: 5px;
+}
+.map {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+.map iframe {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 80%;
+  height: 80%;
+}
+#contact {
+  background: url("../img/floridaGeneral/contact1.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#contact {
+  background-attachment: fixed;
+}
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: #ffb600;
+  letter-spacing: 1px;
+  box-shadow: none;
+  text-decoration: none;
+}
+/* contact ends */
+
+/* back to top */
+.arrow-icon {
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+  bottom: 45px;
+  background-color: #ffb600;
+}

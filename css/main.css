@@ -1,15 +1,19 @@
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 .wow {
-    visibility: hidden;
-  }
-.custom-button{
+  visibility: hidden;
+}
+.custom-shadow {
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.custom-button {
   background-color: rgba(28, 28, 28, 0.75);
 }
-.custom-button:hover{
+.custom-button:hover {
   background-color: rgba(28, 28, 28, 0.4);
 }
-.custom-padding{
+.custom-padding {
   padding-top: 70px;
 }
 /* preloader starts */
@@ -21,7 +25,7 @@ html {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;  /*Change this to match your website's background color */
+  background-color: #ffffff; /*Change this to match your website's background color */
   z-index: 9999;
   transition: transform 2s ease-in-out; /* Adjust the transition duration */
 }
@@ -56,114 +60,111 @@ html {
 }
 /* preloader ends */
 
-/* #intro {
-  background: url("../img/tatweerImages/intro.jpg") no-repeat center center;
-  background-size: cover; } */
-  #intro {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .site-bg-video-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-  
-  .site-bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-  }
-  
-  .site-bg-img {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .white-text {
-    color: #fff;
-   
-  }
-  #intro h1{
-    font-weight: 600;
-  }
+#intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-bg-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.site-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.site-bg-img {
+  position: relative;
+  z-index: 1;
+}
+
+.white-text {
+  color: #fff;
+}
+#intro h1 {
+  font-weight: 600;
+}
+.font-custom {
+  font-family: "YourCustomFont", sans-serif;
+}
+
+@media (max-width: 768px) {
   .font-custom {
-    font-family: 'YourCustomFont', sans-serif;
+    font-size: 24px;
   }
-  
-  @media (max-width: 768px) {
-    .font-custom {
-      font-size: 24px;
-    }
-  
-    #intro h1 {
-      font-size: 28px;
-    }
+
+  #intro h1 {
+    font-size: 28px;
   }
-  /* end */
+}
+/* end */
 .top-nav-collapse {
-  background-color: white !important; }
+  background-color: white !important;
+}
 
 .navbar:not(.top-nav-collapse) {
-  background: white ; }
+  background: white;
+}
 
 .top-nav-collapse .nav-link {
-    color: black!important;
-  }
-  .top-nav-collapse .nav-link::after{
-    background-color: black !important;
-  } 
-  .nav-link{
-    position: relative;
-  }
-  .nav-link::after{
-    content:'';
-    transition: all 0.5s;
-    opacity: 0;
-    height: 2px;
-    width: 0;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 9px;
-  }
-  .nav-link:hover::after{
-    opacity: 1;
-    width: 70%;
-  }
-  .logo{
-    width: 220px;
-  }
-  .navbar .navbar-collapse ul {
-    background-color: white;
+  color: black !important;
 }
-.navbar .navbar-collapse .nav-link{
+.top-nav-collapse .nav-link::after {
+  background-color: black !important;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  transition: all 0.5s;
+  opacity: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 9px;
+}
+.nav-link:hover::after {
+  opacity: 1;
+  width: 70%;
+}
+.logo {
+  width: 220px;
+}
+.navbar .navbar-collapse ul {
+  background-color: white;
+}
+.navbar .navbar-collapse .nav-link {
   color: black !important;
   font-weight: 400;
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
-  
+
 /* #intro .h6 {
   font-weight: 300;
   line-height: 1.7; } */
 
-  
-
- .site-bg-img {
+.site-bg-img {
   height: 100vh;
   min-height: 480px;
-  max-height: 1080px; }
+  max-height: 1080px;
+}
 
 /*.hm-gradient .site-bg-img {
   background: rgba(42, 27, 161, 0.7);
@@ -172,61 +173,62 @@ html {
 @media (max-width: 450px) {
   .margins {
     margin-right: 1rem;
-    margin-left: 1rem; }
-   }
+    margin-left: 1rem;
+  }
+}
 
-.navbar{
+.navbar {
   box-shadow: none;
 }
 
 /* Navbar items */
 
 /* intro section */
-.font-custom{
+.font-custom {
   font-size: 50px;
   font-weight: 500;
   letter-spacing: 0.01ch;
 }
 
-@media screen and (max-width: 767px){
-  .font-custom{
+@media screen and (max-width: 767px) {
+  .font-custom {
     font-size: 40px;
     line-height: 50px;
     font-weight: 500;
   }
- 
-  #about p{
+
+  #about p {
     line-height: 1.5;
   }
-  .logo{
+  .logo {
     width: 200px;
   }
 }
 /* ends */
- 
+
 /* about */
-#about p{
+#about p {
   line-height: 2;
 }
 @media (min-width: 992px) {
   .container.about {
-      max-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .about-text  {
-      padding-right: calc(((100% - 960px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 960px) / 2) + 0.75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .about-text  {
-      padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .about-text  {
-      padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
   }
 }
 /* about ends */
@@ -281,49 +283,49 @@ html {
 /* message section */
 
 #message .italicPara {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-  }
- 
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
 #message {
-    background: url("../img/tatweerImages/msgbg3.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-  }
-  
+  background: url("../img/tatweerImages/msgbg3.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
 #message::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 #message {
-      background-attachment: fixed;
-    }
+  background-attachment: fixed;
+}
 
 .blockclass {
-    position: relative;
-    line-height: 2;
-    font-size: 20px;
-    color: rgb(226, 226, 226);
-  }
- 
+  position: relative;
+  line-height: 2;
+  font-size: 20px;
+  color: rgb(226, 226, 226);
+}
+
 .blockclass:before {
-    content: "\f10d";
-    font-family: FontAwesome;
-    position: absolute;
-    font-size: 28px;
-    color: #E5E5E5;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
+  content: "\f10d";
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 28px;
+  color: #e5e5e5;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
 /* message ends */
 
@@ -349,14 +351,13 @@ html {
   overflow: hidden;
   transition: all 0.5s;
 }
-.overlay-class h5{
+.overlay-class h5 {
   font-weight: 400;
-  
 }
 
 .overlay {
   position: absolute;
-  bottom: -100%; 
+  bottom: -100%;
   left: 0;
   right: 0;
   height: 100%;
@@ -373,25 +374,25 @@ html {
 }
 
 .overlay-class:hover .overlay {
-  bottom: 0; 
+  bottom: 0;
 }
 
 @media (min-width: 1200px) {
   .custom-flex > div {
-      flex: 1 1 350px;
+    flex: 1 1 350px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .custom-flex > div {
-      flex: 1 1 300px;
+    flex: 1 1 300px;
   }
 }
 
 @media (max-width: 767px) {
   .custom-flex > div {
-      flex: 1 1 100%;
-      max-width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
@@ -399,48 +400,46 @@ html {
 
 /* partners starts */
 
-.brand{
+.brand {
   transition: all 0.2s ease-in-out;
   margin-bottom: 25px;
 }
 
-.brand:hover{
+.brand:hover {
   transform: scale(1.2);
 }
 
-@media (max-width:767px){
-  .brand{
+@media (max-width: 767px) {
+  .brand {
     margin-left: 90px;
-    
   }
 }
 
-@media (max-width: 550px){
-  .brand{
+@media (max-width: 550px) {
+  .brand {
     margin-left: 40px;
   }
 }
 
-.custom-brand-a:hover{
-   border-bottom: 2px solid #d3a500;
+.custom-brand-a:hover {
+  border-bottom: 2px solid #d3a500;
 }
 
 /* partners ends */
 
-
 /* contact */
 
-iframe{
-  border-radius: 5px; 
-} 
+iframe {
+  border-radius: 5px;
+}
 
-.map{
+.map {
   position: relative;
   width: 100%;
   padding-top: 50%;
 }
 
-.map iframe{
+.map iframe {
   position: absolute;
   top: 30px;
   left: 35px;
@@ -465,34 +464,34 @@ iframe{
 }
 
 #contact {
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
+}
 
 #contact .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
 }
 
 #contact .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
 }
 
 #contact .btn.btn-link:hover {
-    color: #ffb600;
-    transform: scale(1.02);
-    box-shadow: none;
-    text-decoration: none;
+  color: #ffb600;
+  transform: scale(1.02);
+  box-shadow: none;
+  text-decoration: none;
 }
 
 /* contact ends */

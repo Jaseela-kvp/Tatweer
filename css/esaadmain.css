@@ -1,50 +1,58 @@
 html {
-    scroll-behavior: smooth; }
-  #intro {
+    scroll-behavior: smooth; 
+  }
+  
+#intro {
     background: url("../img/EsaadImages/intro1.jpg") no-repeat center center;
     background-size: cover;
-     }
+  }
   
-  .top-nav-collapse {
-    background-color: #faedcd;}
+.top-nav-collapse {
+    background-color: #faedcd;
+  }
  
-  .navbar:not(.top-nav-collapse) {
-    background: transparent !important; }
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important; 
+  }
   
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .navbar .navbar-collapse ul{
       background-color: transparent;
     } 
   }
   
-  #intro .h6 {
+#intro .h6 {
     font-weight: 300;
-    line-height: 1.7; }
+    line-height: 1.7; 
+  }
   
-  .site-bg-img {
+.site-bg-img {
     height: 100vh;
     min-height: 480px;
-    max-height: 1080px; }
+    max-height: 1080px; 
+  }
   
-  .hm-gradient .site-bg-img {
-    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); }
+.hm-gradient .site-bg-img {
+    background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
+  }
   
-  @media (max-width: 450px) {
+@media (max-width: 450px) {
     .margins {
       margin-right: 1rem;
       margin-left: 1rem; }
-     }
+  }
   
-  .navbar{
+.navbar{
     box-shadow: none;
   }
   
   /* Navbar items */
-  .nav-link{
+  
+.nav-link{
     position: relative;
   }
-  .nav-link::after{
+  
+.nav-link::after{
     content:'';
     transition: all 0.5s;
     opacity: 0;
@@ -55,32 +63,38 @@ html {
     bottom: 0;
     left: 9px;
   }
-  .nav-link:hover::after{
+  
+.nav-link:hover::after{
     opacity: 1;
     width: 70%;
   }
-  .navbar ul li a{
+  
+.navbar ul li a{
    font-weight: 400;
    color:#603808;
   }
-  .navbar-toggler-icon {
+  
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(96, 56, 8, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
   }
   /* intro section */
-  .font-custom{
+  
+.font-custom{
     font-size: 70px;
     font-weight: 500;
     color: #603808;
   }
   
-  .word-font{
+.word-font{
     font-size: 60px;
     font-weight: 500;
   }
-  .logo{
+  
+.logo{
     width : 250px;
   }
-  @media screen and (max-width: 767px){
+  
+@media screen and (max-width: 767px){
     .font-custom{
       font-size: 45px;
       line-height: 60px;
@@ -100,8 +114,7 @@ html {
   /* ends */
    
   /* about */
- 
-  @media screen and (min-width: 767px){
+@media screen and (min-width: 767px){
     #about p{
       line-height: 2;
     }
@@ -109,13 +122,13 @@ html {
   /* about ends */
   
   /* section title */
-  .section-title {
+.section-title {
     padding-bottom: 40px;
     text-align: start;
     margin-left: 50px;
   }
   
-  .section-title h2 {
+.section-title h2 {
     font-size: 14px;
     font-weight: 500;
     padding: 0;
@@ -127,7 +140,7 @@ html {
     font-style: italic;
   }
   
-  .section-title h2::after {
+.section-title h2::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -136,7 +149,7 @@ html {
     margin: 4px 10px;
   }
   
-  .section-title p {
+.section-title p {
     margin: 0;
     margin: 0;
     font-size: 36px;
@@ -148,8 +161,7 @@ html {
   /* section title ends */
 
   /* accordian starts */
-
-  .accordion{
+.accordion{
     --bs-accordion-active-color: black;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #rgba(249, 214, 167, 0.7);
@@ -158,123 +170,147 @@ html {
     --bs-accordion-border-width: 2px;
     
   }
-  .accordion-button{
+  
+.accordion-button{
     background: linear-gradient(45deg, rgba(249, 214, 167, 0.7), rgba(248, 237, 219, 0.7) 100%); 
   }
 
-  .accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed){
     box-shadow: none;
   }
-  .accordion-button h4{
+  
+.accordion-button h4{
     color: #603808;
     text-transform: uppercase;
     font-weight: 400;
   }
-  .accordion-body{
+  
+.accordion-body{
     background-color: #603808;
     color: white;
   }
-  .accordion-button{
+  
+.accordion-button{
       display: flex ;
-      justify-content: center; /* Center the content horizontally */
-      align-items: center; /* Center the content vertically */
+      justify-content: center; 
+      align-items: center; 
   }
  
   /* accordian ends */
 
   /* product section starts */
-  .col-margin {
+.col-margin {
     margin-right: 3rem;  
   }
-          /* Remove margin from the last column */
-  .row [class*="col-"]:last-child {
+      /* Remove margin from the last column */
+.row [class*="col-"]:last-child {
     margin-right: 0;
   }
-  #products{
+  
+#products{
     background: url("../img/EsaadImages/blur.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_1 {
+  
+#Pintro_1 {
     background: url("../img/EsaadImages/gifts/medalintro2.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_2 {
+  
+#Pintro_2 {
     background: url("../img/EsaadImages/personalIntro.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_3 {
+  
+#Pintro_3 {
     background: url("../img/EsaadImages/uniformIntro.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_4 {
+  
+#Pintro_4 {
     background: url("../img/EsaadImages/lightingintro.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_5 {
+  
+#Pintro_5 {
     background: url("../img/EsaadImages/tentIntro.png") no-repeat center center;
     background-size: cover;
   }
-  #Pintro_6 {
+  
+#Pintro_6 {
     background: url("../img/EsaadImages/generalintro.png") no-repeat center center;
     background-size: cover;
   }
-  .custom_shadow{
+  
+.custom_shadow{
     display: flex;
     align-items: start;
   }
-  #products .h5{
+  
+#products .h5{
     color:#603808
   }
-  #products a{
+  
+#products a{
     background-color: #603808 !important;
     transition: all 0.2s ease-in-out;
   }
-  #products a:hover{
+  
+#products a:hover{
     transform: scale(1.05);
   }
   /* product section ends */
 
   /* career starts */
-  #career{
+#career{
     background-color: beige;
   }
-  #career a{
+  
+#career a{
     background-color: #603808  !important;;
     transition: all 0.2s ease-in-out;
   }
-  #career a:hover{
+  
+#career a:hover{
     transform: scale(1.05);
   }
   /* career ends */
+
   /* contact */
-  #contact{
+#contact{
     background: url("../img/EsaadImages/contactbg.jpeg") no-repeat center center;
     background-size: cover;
   }
-  iframe{
+  
+iframe{
     border-radius: 5px; 
   } 
-  .map{
+  
+.map{
     position: relative;
     width: 100%;
     padding-top: 50%;
     filter: invert(100%);
   }
-  .map iframe{
+  
+.map iframe{
     position: absolute;
     top: 30px;
     left: 35px;
     width: 80%;
     height: 80%;
   }
-  #contact a{
+  
+#contact a{
     background-color: transparent !important;
   }
-  .custom-text-color{
+  
+.custom-text-color{
     color:#603808;
     font-weight: 500;
   }
-  #contact {
+  
+#contact {
     padding: 80px 0;
     background: url("../img/EsaadImages/contactbg.jpeg") no-repeat;
     background-position: center center;
@@ -282,7 +318,7 @@ html {
     position: relative;
   }
   
-  #contact::before {
+#contact::before {
     content: "";
     position: absolute;
     left: 0;
@@ -290,19 +326,21 @@ html {
     top: 0;
     bottom: 0;
   }
-    #contact {
+    
+#contact {
       background-attachment: fixed;
     }
 
   /* contact ends */
   
   /* back to top */
-  .arrow-icon {
+.arrow-icon {
     position: fixed;
     right: 20px;
     z-index: 99;
     bottom: 45px;
   }
-  .custom-button{
+
+.custom-button{
     background-color: #603808 !important;
   }
