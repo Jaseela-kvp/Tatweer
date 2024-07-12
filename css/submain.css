@@ -6,12 +6,13 @@ html {
   background-size: cover; }
 
 .top-nav-collapse {
-  background-color: white!important; }
+  background-color: white!important;
+  height: 140px; }
 
-  .top-nav-collapse .nav-link::after{
+.top-nav-collapse .nav-link::after{
     background-color: black !important;
   } 
-  .top-nav-collapse .nav-link {
+.top-nav-collapse .nav-link {
     color: black!important;
   }
 .navbar:not(.top-nav-collapse) {
@@ -45,6 +46,7 @@ html {
      }
 .navbar{
   box-shadow: none;
+  height: 140px;
 }
 .nav-link{
   position: relative;
